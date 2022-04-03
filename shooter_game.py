@@ -1,7 +1,7 @@
 from pygame import *
 from random import randint
 font.init()
-font1 = font.SysFont('verdana',80)
+font1 = font.SysFont('arial',80)
 win = font1.render('YOU WIN!', True, (255,255,255))
 lose = font1.render('YOU LOSE!', True, (180,0,0))
 
@@ -11,8 +11,8 @@ mixer.music.play()
 fire_sound = mixer.Sound('fire.ogg')
 
 img_bullet = 'bullet.png'
-win_width = 700
-win_height = 500
+win_width = 1280
+win_height = 720
 window = display.set_mode((win_width, win_height))
 display.set_caption("Shmup")
 background = transform.scale(image.load("galaxy.jpg"), (win_width, win_height))
@@ -27,7 +27,7 @@ img_enemy = "ufo.png"
 
 lost = 0
 score = 0
-goal = 10
+goal = 15
 max_lost = 3
 
 
