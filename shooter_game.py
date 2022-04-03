@@ -11,8 +11,8 @@ mixer.music.play()
 fire_sound = mixer.Sound('fire.ogg')
 
 img_bullet = 'bullet.png'
-win_width = 1280
-win_height = 720
+win_width = 800
+win_height = 600
 window = display.set_mode((win_width, win_height))
 display.set_caption("Shmup")
 background = transform.scale(image.load("galaxy.jpg"), (win_width, win_height))
